@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Introduction for Brief information of 50 states of the USA</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Introduction for Brief information of 50 states of the USA">
+  <meta name="author" content="Daopeng Shi">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="libraries/widgets/bootstrap/css/bootstrap.css"></link>
+<link rel=stylesheet href="libraries/widgets/quiz/css/demo.css"></link>
+<link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Introduction for Brief information of 50 states of the USA</h1>
+    <h2>A simple shiny application</h2>
+    <p>Daopeng Shi<br/>Serviceman</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Overview</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Brief information of 50 states of the USA is a very simple shiny application which can be used to get some basic informations about 50 USA states. The information include the specific location of a state on the USA map and some statistics figures of the state based on R maps package and R state.x77 dataset respectively.</p>
+
+<p>You can visit the shiny application by the link:
+<a href="https://shidaopeng.shinyapps.io/shinyapp/">Visit Brief information of 50 states of the USA!</a></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Information UI:  map</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="assets/fig/unnamed-chunk-1-1.png" alt="plot of chunk unnamed-chunk-1"> </p>
+
+<p>The information UI of map is as above:</p>
+
+<ul>
+<li>The left figure shows when non of a specific state is chosen from the select box.</li>
+<li>The right figure show when a specific state is chosen(In the figure, California
+is chosen). The chosen state will be showed in blue to highlight the location of
+the state.</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>Information UI:  datatable</h2>
+  </hgroup>
+  <article data-timings="">
+    <pre><code>   Statename Population Income Illiteracy Life Exp Murder HS Grad Frost   Area
+1    Alabama       3615   3624        2.1    69.05   15.1    41.3    20  50708
+2     Alaska        365   6315        1.5    69.31   11.3    66.7   152 566432
+3    Arizona       2212   4530        1.8    70.55    7.8    58.1    15 113417
+4   Arkansas       2110   3378        1.9    70.66   10.1    39.9    65  51945
+5 California      21198   5114        1.1    71.71   10.3    62.6    20 156361
+</code></pre>
+
+<p>Above is the display of detail information of state when non of a specific state
+is chosen from the select box(You can also uncheck the check box to hide the 
+detail information). The default length of the information is 5 rows(Can be 
+adjusted through the shiny datatable). </p>
+
+<pre><code>   Statename Population Income Illiteracy Life Exp Murder HS Grad Frost   Area
+5 California      21198   5114        1.1    71.71   10.3    62.6    20 156361
+</code></pre>
+
+<p>When a specific state is chosen, the display of detail information of state is 
+as above.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Little quiz</h2>
+  </hgroup>
+  <article data-timings="">
+    
+<div class="quiz quiz-multiple well" data-individual>
+  <p>Which of following information about states of the USA can you get from 
+application?</p>
+
+<ol>
+<li><em>Location of state(s) on map of the USA</em></li>
+<li><em>Pupulation of state(s)</em></li>
+<li><em>Area of state(s)</em></li>
+</ol>
+
+  <button class="quiz-submit btn btn-primary">Submit</button>
+  <button class="quiz-toggle-hint btn btn-info">Show Hint</button>
+  <button class="quiz-show-answer btn btn-success">Show Answer</button>
+  <button class="quiz-clear btn btn-danger">Clear</button>
+  
+  <div class="quiz-hint">
+  <p>Please refer page 3 and 4 of this presentation.</p>
+
+</div>
+<div class="quiz-explanation">
+  <p>All the choices are right.</p>
+
+<p>Thank you to use this application. May you have a better understand of the states
+of the United States of America.</p>
+
+</div>
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Overview'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Information UI:  map'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Information UI:  datatable'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Little quiz'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  <script src="libraries/widgets/bootstrap/js/bootstrap.min.js"></script>
+<script src="libraries/widgets/bootstrap/js/bootbox.min.js"></script>
+<script src="libraries/widgets/quiz/js/jquery.quiz.js"></script>
+<script src="libraries/widgets/quiz/js/mustache.min.js"></script>
+<script src="libraries/widgets/quiz/js/quiz-app.js"></script>
+
+  <script>  
+  $(function (){ 
+    $("#example").popover(); 
+    $("[rel='tooltip']").tooltip(); 
+  });  
+  </script>  
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
